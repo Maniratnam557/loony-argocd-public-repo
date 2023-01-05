@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ngnix-service
+  name: nginx-service-svc
   labels:
-   app: ngnix
+   app: nginx
    namespace: default
 spec:
   selector:
-    app: ngnix
+    app: nginx
   ports:
   - port: 80
     targetPort: 80
